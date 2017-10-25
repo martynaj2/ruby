@@ -14,10 +14,15 @@
 
 
 <div class="links">
-<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+<div class="Edit">
+		<%= link_to edit_todo_list_path(@todo_list) do %>
+			<i class="fa fa-pencil-square-o"></i>
+		<% end %>
+	</div>
+
+
+<%= link_to 'Delete', todo_list_path(@todo_list), method: :delete, data: { confirm: "Siur Siur?"} %> |
 <%= link_to 'Back', todo_lists_path %>
+
 </div>
-
-
-
 
