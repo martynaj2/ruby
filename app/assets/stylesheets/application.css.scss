@@ -26,11 +26,7 @@ html {
 
 body {
  	height: 100%;
-  background: -webkit-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:    -moz-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:     -ms-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:      -o-linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
-  background:         linear-gradient(40deg, #4CB8C4 10%, #EAECC6 100%);
+  background:         linear-gradient(40deg, #c1afd0 10%, rgba(64, 5, 5, 0.86) 100%);
   font-family: 'Lato', sans-serif;
 }
 
@@ -85,7 +81,7 @@ body {
 	margin: 0 0 3em 0;
 	text-align: center;
 	font-size: 0.9em;
-	color: $dark;
+	color: white;
 	font-weight: 100;
 }
 
@@ -114,8 +110,8 @@ body {
 			float: left;
 			p {
 				margin: 0;
-				padding: 1em;
-				color: $dark;
+				padding: 0.8em;
+				color: white;
 				font-weight: 100;
 			}
 		}
@@ -159,7 +155,7 @@ body {
 			transition: all .4s ease-in-out;
 			cursor: pointer;
 			&:hover {
-				background: $dark;
+				background: #96436c;
 			}
 		}
 		::-webkit-input-placeholder { color: $dark; }
@@ -181,7 +177,7 @@ body {
 	padding: 0 5%;
 }
 label {
-	color: $dark;
+	color: #1b0f1a;
 }
 input[type="text"], textarea {
 	width: 100%;
@@ -207,10 +203,10 @@ input[type="submit"] {
 	display: inline-block;
 	transition: all .4s ease-in-out;
 	cursor: pointer;
-	color: $dark;
+	color: #1b0f1a;
 	&:hover {
 		background: $dark;
 		color: white;
 	}
 }
-::-webkit-input-placeholder { color: $dark; }
+::-webkit-input-placeholder { color: #1b0f1a; }

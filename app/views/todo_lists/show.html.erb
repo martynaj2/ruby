@@ -12,17 +12,26 @@
 	</div>
 </div>
 
-
 <div class="links">
+
 <div class="Edit">
 		<%= link_to edit_todo_list_path(@todo_list) do %>
-			<i class="fa fa-pencil-square-o"></i>
+			<i class="fa fa-pencil-square-o fa-2x"></i> Edit<br>
 		<% end %>
 	</div>
+<div class="Delete">
+		<%= link_to todo_list_path(@todo_list), method: :delete, data: { confirm: "Are you sure?"} do %>
+			<i class="fa fa-times fa-2x"></i> Delete list<br>
+		<% end %>
+	</div>
+<div class="Back">
+		<%= link_to todo_lists_path do %>
+			<i class="fa fa-home fa-2x"></i> Home<br>
+		<% end %>
+	</div>	
+	
 
-
-<%= link_to 'Delete', todo_list_path(@todo_list), method: :delete, data: { confirm: "Siur Siur?"} %> |
-<%= link_to 'Back', todo_lists_path %>
 
 </div>
+
 
